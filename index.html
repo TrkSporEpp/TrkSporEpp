@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eppingen Türkspor e.V. | Esports</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial Black', 'Impact', sans-serif;
+        }
+
+        body {
+            background-color: #0b0b0b;
+            color: #ffffff;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 450px;
+            margin: 0 auto;
+            background: #111111;
+            border: 1px solid #222;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0px 0px 20px rgba(255, 0, 0, 0.1);
+        }
+
+        /* Header */
+        header {
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid #222;
+        }
+
+        .logo-placeholder {
+            width: 50px;
+            height: 50px;
+            background: #ff0000;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 10px;
+            font-weight: bold;
+        }
+
+        .header-title {
+            text-align: right;
+        }
+
+        .header-title h1 {
+            font-size: 18px;
+            letter-spacing: 1px;
+        }
+
+        .header-title h1 span {
+            color: #ff0000;
+        }
+
+        .header-title p {
+            font-family: Arial, sans-serif;
+            font-size: 10px;
+            color: #888;
+            letter-spacing: 2px;
+            margin-top: 2px;
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 30px 20px;
+            text-align: center;
+            background: linear-gradient(180deg, rgba(20,20,20,1) 0%, rgba(11,11,11,1) 100%);
+        }
+
+        .badge {
+            display: inline-block;
+            border: 1px solid #ff0000;
+            color: #ff0000;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 11px;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+            font-family: Arial, sans-serif;
+        }
+
+        .hero h2 {
+            font-size: 38px;
+            line-height: 0.9;
+            text-transform: uppercase;
+            margin-bottom: 5px;
+        }
+
+        .hero h2 span {
+            color: #ff0000;
+            display: block;
+        }
+
+        .hero .sub-esports {
+            font-size: 24px;
+            color: #222;
+            letter-spacing: 4px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            color: #ccc;
+            line-height: 1.5;
+        }
+
+        /* Section Global */
+        section {
+            padding: 30px 20px;
+            border-top: 1px solid #222;
+        }
+
+        section h3 {
+            font-size: 28px;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+        }
+
+        section h3 span {
+            color: #ff0000;
+        }
+
+        section .desc {
+            font-family: Arial, sans-serif;
+            font-size: 13px;
+            color: #aaa;
+            line-height: 1.4;
+            margin-bottom: 20px;
+        }
+
+        /* Roster Box */
+        .roster-box {
+            border: 2px dashed #222;
+            padding: 40px 20px;
+            text-align: center;
+            border-radius: 8px;
+        }
+
+        .roster-box h4 {
+            color: #666;
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+
+        .roster-box p {
+            font-family: Arial, sans-serif;
+            color: #444;
+            font-size: 12px;
+        }
+
+        /* Formular Styling */
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 11px;
+            color: #888;
+            letter-spacing: 1px;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+        }
+
+        .form-group input, .form-group select, .form-group textarea {
+            width: 100%;
+            background: #161616;
+            border: 1px solid #333;
+            padding: 12px;
+            color: #fff;
+            border-radius: 6px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+        }
+
+        .form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+            outline: none;
+            border-color: #ff0000;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+
+        .submit-btn {
+            width: 100%;
+            background: #ff0000;
+            color: #fff;
+            border: none;
+            padding: 15px;
+            font-size: 16px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            border-radius: 6px;
+            cursor: pointer;
+            margin-top: 10px;
+            text-transform: uppercase;
+        }
+
+        .submit-btn:hover {
+            background: #cc0000;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <header>
+        <div class="logo-placeholder">LOGO</div>
+        <div class="header-title">
+            <h1>EPPINGEN <span>TÜRKSPOR</span></h1>
+            <p>E.V. • ESPORTS • SEIT 1995</p>
+        </div>
+    </header>
+
+    <div class="hero">
+        <div class="badge">⚡ EA FC 26 • PRO CLUBS • SEIT 1995</div>
+        <h2>EPPINGEN <span>TÜRKSPOR</span></h2>
+        <div class="sub-esports">ESPORTS</div>
+        <p>Werde Teil von <strong>Eppingen Türkspor e.V. Esports</strong> — wir kämpfen in EA FC 26 Pro Clubs um Siege, Titel und den Aufstieg. Eine Mannschaft. Ein Ziel. Ein Verein.</p>
+    </div>
+
+    <section>
+        <h3>UNSER <span>KADER</span></h3>
+        <p class="desc">Diese Spieler tragen den Halbmond auf der Brust. Vom Torwart bis zum Stürmer — geprüft, freigegeben und gnadenlos.</p>
+        
+        <div class="roster-box">
+            <h4>Noch keine Spieler im Kader</h4>
+            <p>Bewirb dich unten — Aufnahme nach Admin-Freigabe.</p>
+        </div>
+    </section>
+
+    <section>
+        <h3>INTERESSE? <span>BEWERBEN.</span></h3>
+        <p class="desc">Fülle das Formular aus — wir melden uns über PSN/EA-ID oder Discord.</p>
+
+        <form action="#" method="POST">
+            <div class="form-group">
+                <label>Spielername / Gamertag</label>
+                <input type="text" placeholder="z. B. ArdaG10" required>
+            </div>
+
+            <div class="form-group">
+                <label>Alter</label>
+                <input type="number" placeholder="z. B. 22" required>
+            </div>
+
+            <div class="form-group">
+                <label>Bevorzugte Position</label>
+                <select required>
+                    <option value="">Position wählen</option>
+                    <option value="ST">ST (Stürmer)</option>
+                    <option value="ZOM">ZOM / ZM</option>
+                    <option value="Flügel">LF / RF</option>
+                    <option value="ZDM">ZDM</option>
+                    <option value="Verteidigung">IV / LV / RV</option>
+                    <option value="TW">TW (Torwart)</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Plattform</label>
+                <select required>
+                    <option value="">Plattform wählen</option>
+                    <option value="PS5">PS5</option>
+                    <option value="Xbox">Xbox Series X|S</option>
+                    <option value="PC">PC</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>PSN / EA-ID</label>
+                <input type="text" placeholder="Deine ID eintragen" required>
+            </div>
+
+            <div class="form-group">
+                <label>Pro Clubs Erfahrung</label>
+                <textarea rows="3" placeholder="Bisherige Vereine, Jahre, Highlights..."></textarea>
+            </div>
+
+            <div class="form-group">
+                <label>Aktuelle Statistiken (Letzte Saison)</label>
+                <div class="stats-grid">
+                    <input type="number" placeholder="Spiele">
+                    <input type="number" placeholder="Tore">
+                    <input type="number" placeholder="Assists">
+                    <input type="text" placeholder="Ø Note">
+                </div>
+            </div>
+
+            <button type="submit" class="submit-btn">Bewerbung absenden</button>
+        </form>
+    </section>
+
+</div>
+
+</body>
+</html>
